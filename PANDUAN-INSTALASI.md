@@ -31,3 +31,10 @@ git push -u origin main
 - RAB melebihi pagu ditolak saat dikirim.
 - Alur: Waka → Bendahara (revisi → kirim ulang) → Kepala Sekolah → PDF.
 - Notifikasi email/WA terkirim; kegagalan tercatat di sheet `NOTIF_LOG`.
+
+## D. Memperbarui dari versi sebelumnya (tampilan Stitch)
+1. Tempel ulang **Kode.gs** terbaru ke editor Apps Script (data di Sheets tidak berubah; **jangan** jalankan `setupAppEnvironment` lagi).
+2. Deploy → *Manage deployments* → ✏️ → Version: **New version** → Deploy (URL `/exec` tetap).
+3. Ganti seluruh isi repo frontend dengan isi ZIP baru, isi lagi `js/config.js`, lalu `git add . && git commit -m "UI Stitch" && git push`.
+4. Buka situs, tekan **Ctrl+Shift+R**, lalu masuk ulang.
+Catatan: tampilan memakai Tailwind CDN dan Google Fonts, jadi perangkat pengguna perlu terhubung internet.

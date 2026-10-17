@@ -2,7 +2,108 @@
 <html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RAB Waka — Rancangan Anggaran Belanja</title>
 <link rel="preconnect" href="https://script.google.com"><link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css"></head>
-<body><div id="bar"></div><div id="app"></div><div id="toast"></div>
-<script src="js/config.js"></script><script src="js/app.js"></script></body></html>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "surface": "#f8f9ff",
+        "surface-container-high": "#dce9ff",
+        "error": "#ba1a1a",
+        "on-tertiary": "#ffffff",
+        "tertiary-fixed-dim": "#c0c1ff",
+        "on-secondary-fixed": "#001e2f",
+        "on-primary-fixed": "#00174b",
+        "on-secondary-fixed-variant": "#004c6e",
+        "secondary-fixed-dim": "#89ceff",
+        "secondary-container": "#39b8fd",
+        "inverse-surface": "#213145",
+        "on-tertiary-container": "#f1eeff",
+        "outline": "#737686",
+        "on-surface": "#0b1c30",
+        "on-error-container": "#93000a",
+        "inverse-primary": "#b4c5ff",
+        "surface-dim": "#cbdbf5",
+        "surface-container-highest": "#d3e4fe",
+        "primary-fixed-dim": "#b4c5ff",
+        "on-tertiary-fixed": "#07006c",
+        "surface-container": "#e5eeff",
+        "on-primary-fixed-variant": "#003ea8",
+        "outline-variant": "#c3c6d7",
+        "on-secondary": "#ffffff",
+        "primary-container": "#2563eb",
+        "surface-bright": "#f8f9ff",
+        "tertiary-container": "#585be6",
+        "background": "#f8f9ff",
+        "on-surface-variant": "#434655",
+        "surface-container-low": "#eff4ff",
+        "tertiary-fixed": "#e1e0ff",
+        "secondary-fixed": "#c9e6ff",
+        "surface-variant": "#d3e4fe",
+        "on-background": "#0b1c30",
+        "surface-container-lowest": "#ffffff",
+        "surface-tint": "#0053db",
+        "primary": "#004ac6",
+        "on-primary": "#ffffff",
+        "on-primary-container": "#eeefff",
+        "tertiary": "#3e3fcc",
+        "on-tertiary-fixed-variant": "#2f2ebe",
+        "inverse-on-surface": "#eaf1ff",
+        "error-container": "#ffdad6",
+        "on-error": "#ffffff",
+        "on-secondary-container": "#004666",
+        "secondary": "#006591",
+        "primary-fixed": "#dbe1ff"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "margin": "2rem",
+        "gutter-mobile": "1rem",
+        "space-xs": "0.25rem",
+        "space-md": "1rem",
+        "gutter": "1.5rem",
+        "space-xl": "2.5rem",
+        "space-sm": "0.5rem",
+        "space-lg": "1.5rem",
+        "margin-mobile": "1rem"
+      },
+      "fontFamily": {
+        "headline-md": ["Space Grotesk"],
+        "body-lg": ["Geist"],
+        "body-sm": ["Geist"],
+        "headline-xl-mobile": ["Space Grotesk"],
+        "currency-display": ["JetBrains Mono"],
+        "headline-lg": ["Space Grotesk"],
+        "headline-sm": ["Space Grotesk"],
+        "body-md": ["Geist"],
+        "headline-xl": ["Space Grotesk"],
+        "label-code": ["JetBrains Mono"],
+        "currency-table": ["JetBrains Mono"]
+      },
+      "fontSize": {
+        "headline-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+        "body-sm": ["12px", {"lineHeight": "18px", "fontWeight": "400"}],
+        "headline-xl-mobile": ["26px", {"lineHeight": "34px", "fontWeight": "700"}],
+        "currency-display": ["20px", {"lineHeight": "26px", "fontWeight": "600"}],
+        "headline-lg": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+        "headline-sm": ["16px", {"lineHeight": "24px", "fontWeight": "600"}],
+        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "headline-xl": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+        "label-code": ["13px", {"lineHeight": "18px", "fontWeight": "500"}],
+        "currency-table": ["13px", {"lineHeight": "18px", "fontWeight": "500"}]
+      }
+    }
+  }
+};</script></head>
+<body class="bg-surface font-body-md text-on-surface antialiased"><div id="bar"></div><div id="app"></div><div id="toast" class="fixed right-4 bottom-4 z-[100] flex flex-col gap-2"></div>
+<script src="js/config.js"></script><script src="js/app.js"></script><script src="js/pages.js"></script><script src="js/pages2.js"></script><script src="js/pages3.js"></script><script src="js/pages4.js"></script><script src="js/boot.js"></script></body></html>
